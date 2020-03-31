@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Index</title>
+ 
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    
+</head>
+<body>
+  <div class="main">
+    <b>Scientific Calculator</b><br>
+    <t>schniffenhousen@gmail.com</t>
+    <span onclick="deg()">deg</span>
+        <form name="form">
+        <input class="textview" name="textview" placeholder="0" type="calculator"/>
+        </form>
+        
+        <div class="keypad">
+          <div class="greyy">
+            <span class="grey"><a href="shift.html">Shift</a></span>
+            <span class="grey" onclick="insert('ª')">Alpha</span>
+            
+            
+            <span class="Replay grey" colspan="2" rowspan="2"><a onclick="insert('<')" class="rep">Rep</a><a onclick="insert('>')" class="rep">lay</a></span>
+            
+            <span class="grey" onclick="mod()">Mode</span>
+            <span class="grey" onclick="on()">ON</span>
+          </div>
+          <div class="blackk">
+            <span class="black" onclick="inv()">x<sup>-1</sup></span>
+            <span class="black" onclick="insert('C')"><sup>n</sup>C<sub>r</sub></span>
+            <span class="black" onclick="insert('Pol(')">Pol(</span>
+            <span class="black" onclick="cubic()">x³</span>
+          </div>
+          <div class="black2">
+            <span class="black" onclick="insert('*100/ans')">ab/c</span>
+            <span class="black" onclick="rac()">√</span>
+            <span class="black" onclick="sqrt()">x²</span>
+            <span class="black" onclick="pui()">^</span>
+            <span class="black" onclick="insert('log')">log</span>
+            <span class="black" onclick="insert('ln')">ln</span>
+          </div>
+          <div class="black3">
+            <span class="black" onclick="insert('-')">(–)</span>
+            <span class="black" onclick="insert('°')">°…</span>
+            <span class="black" onclick="insert('hyp')">hyp</span>
+            <span class="black" onclick="insert('sin(')">sin</span>
+            <span class="black" onclick="insert('cos(')">cos</span>
+            <span class="black" oclick="insert('tan(')">tan</span>
+          </div>
+          <div class="black4">
+            <span class="black" onclick="insert('rcl')">RCL</span>
+            <span class="black" onclick="insert('+1000-1000')">ENG</span>
+            <span class="black" onclick="insert('(')">(</span>
+            <span class="black" onclick="insert(')')">)</span>
+            <span class="black"onclick="set()">EXP</span>
+            <span class="black" onclick="insert('*1')">M+</span>
+          </div>
+          <div class="pad4">
+            <span class="pad" onclick="insert(7)">7</span>
+            <span class="pad" onclick="insert(8)">8</span>
+            <span class="pad" onclick="insert(9)">9</span>
+            <span class="pad" onclick="back()" id="del">D</span>
+            <span class="pad" onclick="sup()" id="del">C</span>
+            <span class="pad" onclick="expo()">e</span>
+          </div>
+          <div class="pad3">
+            <span class="pad" onclick="insert(4)">4</span>
+            <span class="pad" onclick="insert(5)">5</span>
+            <span class="pad" onclick="insert(6)">6</span>
+            <span class="pad" onclick="insert('-')" id="sign">-</span>
+            <span class="pad" onclick="insert('/')" id="sign">÷</span>
+            <span class="pad" onclick="perc()">%</span>
+          </div>
+          <div class="pad2">
+            <span class="pad" onclick="insert(1)">1</span>
+            <span class="pad" onclick="insert(2)">2</span>
+            <span class="pad" onclick="insert(3)">3</span>
+            <span class="pad" onclick="insert('+')" rowspan="2" id="sign">+</span>
+            <span class="pad" onclick="insert('*')" id="sign">*</span>
+            <span class="pad" id="off" onclick="off()">OFF</span>
+          </div>
+          <div class="pad1">
+            <span class="pad" onclick="insert(0)">0</span>
+            <span class="pad" onclick="insert('.')">.</span>
+            <span class="pad" onclick="pi()">π</span>
+            <span type="memory" class="pad" onclick="ans()">Ans</span>
+            <span class="pad" onclick="equal()" id="equal">=</span>
+           </div>
+        </div>
+        <script type="text/javascript" charset="utf-8" src="main.js"></script>
+    </div>
+</body>
+</html>
