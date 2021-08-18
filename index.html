@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Index</title>
- 
-  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
-    
-</head>
-<body>
-  <div class="main">
-    <b>Scientific Calculator</b><br>
-    <t>schniffenhousen@gmail.com</t>
-    <span onclick="deg()">deg</span>
-        <form name="form">
-        <input class="textview" name="textview" placeholder="0" type="calculator"/>
-        </form>
-        
-        <div class="keypad">
-          <div class="greyy">
-            <span class="grey"><a href="shift.html">Shift</a></span>
-            <span class="grey" onclick="insert('ª')">Alpha</span>
-            
-            
-            <span class="Replay grey" colspan="2" rowspan="2"><a onclick="insert('<')" class="rep">Rep</a><a onclick="insert('>')" class="rep">lay</a></span>
-            
-            <span class="grey" onclick="mod()">Mode</span>
-            <span class="grey" onclick="on()">ON</span>
-          </div>
-          <div class="blackk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Index</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  </head>
+  <body>
+    <div class="main">
+      <b>Scientific Calculator</b><br />
+      <t>schniffenhousen@gmail.com</t>
+      <span onclick="deg()">deg</span>
+      <form name="form">
+        <input
+          class="textview"
+          name="textview"
+          placeholder="0"
+          type="calculator"
+        />
+      </form>
+
+      <div class="keypad">
+        <div class="actions">
+          <span class="grey shift"><a href="shift.html">Shift</a></span>
+          <span class="grey alpha" onclick="insert('ª')">Alpha</span>
+
+          <span class="Replay grey"
+            ><a onclick="insert('<')" class="rep">Rep</a
+            ><a onclick="insert('>')" class="rep">lay</a></span
+          >
+
+          <span class="grey mode" onclick="mod()">Mode</span>
+          <span class="grey on" onclick="on()">ON</span>
+        </div>
+
+        <div class="mid-pad">
+          <div class="black1">
             <span class="black" onclick="inv()">x<sup>-1</sup></span>
-            <span class="black" onclick="insert('C')"><sup>n</sup>C<sub>r</sub></span>
+            <span class="black" onclick="insert('C')"
+              ><sup>n</sup>C<sub>r</sub></span
+            >
             <span class="black" onclick="insert('Pol(')">Pol(</span>
             <span class="black" onclick="cubic()">x³</span>
           </div>
@@ -56,9 +66,12 @@
             <span class="black" onclick="insert('+1000-1000')">ENG</span>
             <span class="black" onclick="insert('(')">(</span>
             <span class="black" onclick="insert(')')">)</span>
-            <span class="black"onclick="set()">EXP</span>
+            <span class="black" onclick="set()">EXP</span>
             <span class="black" onclick="insert('*1')">M+</span>
           </div>
+        </div>
+
+        <div class="num-pad">
           <div class="pad4">
             <span class="pad" onclick="insert(7)">7</span>
             <span class="pad" onclick="insert(8)">8</span>
@@ -73,13 +86,13 @@
             <span class="pad" onclick="insert(6)">6</span>
             <span class="pad" onclick="insert('-')" id="sign">-</span>
             <span class="pad" onclick="insert('/')" id="sign">÷</span>
-            <span class="pad" onclick="perc()">%</span>
+            <span class="pad" onclick="perc(); insert('%')">%</span>
           </div>
           <div class="pad2">
             <span class="pad" onclick="insert(1)">1</span>
             <span class="pad" onclick="insert(2)">2</span>
             <span class="pad" onclick="insert(3)">3</span>
-            <span class="pad" onclick="insert('+')" rowspan="2" id="sign">+</span>
+            <span class="pad" onclick="insert('+')" id="sign">+</span>
             <span class="pad" onclick="insert('*')" id="sign">*</span>
             <span class="pad" id="off" onclick="off()">OFF</span>
           </div>
@@ -89,9 +102,10 @@
             <span class="pad" onclick="pi()">π</span>
             <span type="memory" class="pad" onclick="ans()">Ans</span>
             <span class="pad" onclick="equal()" id="equal">=</span>
-           </div>
+          </div>
         </div>
-        <script type="text/javascript" charset="utf-8" src="main.js"></script>
+      </div>
     </div>
-</body>
+    <script type="text/javascript" charset="utf-8" src="main.js"></script>
+  </body>
 </html>
