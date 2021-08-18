@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu');
 
 * {
   margin: 0;
@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 15pt;
   background: #222;
 }
@@ -37,20 +37,13 @@ body {
 .textview {
   background: radial-gradient(silver, whitesmoke);
   border-radius: 5px;
-  margin-top: 11.6px;
+  margin-top: 50px;
   padding: 0 10px;
   height: 70px;
-  width: 250px;
+  width: 350px;
   font-size: 30px;
   border: 2px solid #87ceeb;
   text-align: right;
-}
-
-b {
-  font-size: 15px;
-  color: olive;
-  margin-left: 55px;
-  margin-top: 5px;
 }
 
 .keypad {
@@ -87,6 +80,7 @@ b {
   background: linear-gradient(145deg, #373737, #2e2e2e);
   box-shadow: 2px 1px 5px black;
   padding: 8px;
+  margin: 0 5px;
   font-size: 0.7rem;
   width: 3px;
 }
@@ -113,7 +107,7 @@ span.Replay {
 .black2,
 .black3,
 .black4 {
-  margin: 7px 0;
+  margin: 10px 0;
 }
 
 .black {
