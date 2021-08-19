@@ -34,21 +34,21 @@ function setM() {
 function mod() {
   document.form.textview.value = exp.substring(0, exp.length - 70);
   document.form.textview.value =
-    document.form.textview.value + "   Deg Rag Gra";
+    document.form.textview.value + '   Deg Rag Gra';
 }
 
 function off() {
   document.form.textview.value = exp.substring(0, exp.length - 70);
-  document.form.textview.value = document.form.textview.value + " ";
+  document.form.textview.value = document.form.textview.value + ' ';
 }
 
 function on() {
   document.form.textview.value = exp.substring(0, exp.length - 70);
-  document.form.textview.value = document.form.textview.value + "0";
+  document.form.textview.value = document.form.textview.value + '0';
 }
 
 function set() {
-  document.form.textview.value = document.form.textview.value + "e+";
+  document.form.textview.value = document.form.textview.value + 'e+';
 }
 
 function equal() {
