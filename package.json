@@ -1,0 +1,25 @@
+{
+  "name": "calculator_2.0",
+  "version": "1.0.0",
+  "description": "calculator",
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kuameh/calculator_2.0.git"
+  },
+  "keywords": [
+    "calc"
+  ],
+  "author": "Ashiangmor Caleb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kuameh/calculator_2.0/issues"
+  },
+  "homepage": "https://github.com/Kuameh/calculator_2.0#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0"
+  }
+}
